@@ -12,7 +12,7 @@ namespace StarKNET.Logger {
         public bool WriteToConsole { get; set; }
 
         public LogConfiguration() {
-            LogDirectory = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "log");
+            LogDirectory = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "log");
             LogFile = "application";
             IncludeTimestamps = true;
             WriteToConsole = true;
