@@ -6,10 +6,12 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StarKNET.Logger {
+namespace StarKNET.Logging {
     public interface ILogger {
         void Log(string message);
         void LogError(string message, Exception ex);
+        void CaptureConsoleOutput();
+        void Dispose();
     }
     public class Logger : ILogger, IDisposable {
         private readonly LogConfiguration Configuration;

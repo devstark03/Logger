@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StarKNET.Logger {
+namespace StarKNET.Logging {
     public class LogConfiguration {
         public string LogDirectory { get; set; }
         public string LogFile { get; set; }

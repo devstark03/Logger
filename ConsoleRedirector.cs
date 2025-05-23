@@ -4,7 +4,7 @@ using System.IO;
 using System.Text;
 
 
-namespace StarKNET.Logger {
+namespace StarKNET.Logging {
 
     /// <summary>
     /// TextWriter implementation that redirects console output to the Logger
